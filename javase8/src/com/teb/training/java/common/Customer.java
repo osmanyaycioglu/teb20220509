@@ -37,8 +37,9 @@ public class Customer {
         return amount;
     }
 
-    public void setAmount(Integer amountParam) {
+    public Customer setAmount(Integer amountParam) {
         amount = amountParam;
+        return this;
     }
 
     public EGender getGender() {
@@ -52,6 +53,10 @@ public class Customer {
 
     public static Customer createMaleCustomer() {
         return new Customer().setGender(EGender.MALE);
+    }
+
+    public static Customer createCustomer() {
+        return new Customer();
     }
 
     public static Customer createFemaleCustomer() {
@@ -118,6 +123,10 @@ public class Customer {
                + username
                + ", password="
                + password
+               + ", gender="
+               + gender
+               + ", amount="
+               + amount
                + "]";
     }
 

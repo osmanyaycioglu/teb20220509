@@ -1,3 +1,5 @@
-osman,yaycioglu
-ali,veli
-ayşe,fatma
+osman,yaycıoğlu,osmany,12345,MALE,10000
+ali,veli,aliv,123,MALE,50000,
+kemal,fatma,kemalf,12356,MALE
+kemal,hatip,kemalh,12356,MALE,100
+ayşe,fatma,aysef,12356,FEMALE,100000
