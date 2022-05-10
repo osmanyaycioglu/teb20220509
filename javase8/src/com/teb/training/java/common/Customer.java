@@ -7,6 +7,7 @@ public class Customer {
     private String  username;
     private String  password;
     private EGender gender;
+    private Integer amount;
 
     public Customer() {
     }
@@ -32,6 +33,13 @@ public class Customer {
         username = usernameParam;
     }
 
+    public Integer getAmount() {
+        return amount;
+    }
+
+    public void setAmount(Integer amountParam) {
+        amount = amountParam;
+    }
 
     public EGender getGender() {
         return gender;
