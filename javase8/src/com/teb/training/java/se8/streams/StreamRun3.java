@@ -77,5 +77,6 @@ public class StreamRun3 {
                                              gelenData) -> toparlama + " " + gelenData,
                                             (paralelyapilan1,
                                              paralelyapilan2) -> paralelyapilan1 + " " + paralelyapilan2));
+
     }
 }
