@@ -1,5 +1,7 @@
 package com.training.tebee.rest.api.design;
 
+import java.util.List;
+
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
@@ -16,4 +18,12 @@ public class EmployeeQueryRest {
     public Employee getEmployee(@PathParam("empId") Long empId) {
         return null;
     }
+
+    @Path("/get/all")
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<Employee> getAll() {
+        return null;
+    }
+
 }

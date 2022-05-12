@@ -1,11 +1,13 @@
 package com.training.tebee.rest;
 
+import javax.validation.constraints.NotEmpty;
 import javax.ws.rs.HeaderParam;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.QueryParam;
 
 public class Person {
 
+    @NotEmpty
     @PathParam("name")
     private String  name;
     @PathParam("surname")
