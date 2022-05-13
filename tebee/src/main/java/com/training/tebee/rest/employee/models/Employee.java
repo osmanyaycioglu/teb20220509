@@ -1,4 +1,4 @@
-package com.training.tebee.rest.api.design;
+package com.training.tebee.rest.employee.models;
 
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
