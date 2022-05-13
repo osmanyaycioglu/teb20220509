@@ -1,24 +1,27 @@
 package com.training.tebee.rest.employee.models;
 
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
-import javax.validation.constraints.Positive;
 import javax.validation.constraints.Size;
 
+@Entity
+@Table(name = "emp")
 public class Employee {
 
-    @NotNull
-    @Positive
-    @Max(Integer.MAX_VALUE)
-    @Min(0)
+    // Jpa
+    @Id
+    @GeneratedValue
     private Long   empId;
     @NotEmpty
     @NotBlank
     @Size(min = 2, max = 15)
+    @Column(name = "isim")
     private String name;
     @NotEmpty
     @NotBlank
